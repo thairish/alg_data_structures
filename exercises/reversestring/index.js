@@ -39,4 +39,6 @@ function reverse(str) {
   */
 }
 
+reverse('apple')
+
 module.exports = reverse;
