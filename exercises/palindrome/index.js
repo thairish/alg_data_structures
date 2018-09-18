@@ -8,15 +8,24 @@
 //   palindrome("abcdefg") === false
 
 function palindrome(str) {
+    //My solution
     let returnStr = '';
-
+    
     for(let character of str) {
         returnStr = character + returnStr;
     }
-
+        
     return returnStr === str;
-}
 
-palindrome('abcdefg');
-
+        // let match = true;
+    
+        // return str.split('').every((char, i) => {
+        //     return char === str[str.length - i - 1];
+        // });    
+        
+        // return match;
+    }
+    
+    palindrome('abcdefg');
+    
 module.exports = palindrome;
