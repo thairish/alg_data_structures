@@ -14,18 +14,18 @@ function palindrome(str) {
     for(let character of str) {
         returnStr = character + returnStr;
     }
-        
-    return returnStr === str;
 
-        // let match = true;
+    return returnStr === str;
+}
+
+    // let match = true;
+
+    // return str.split('').every((char, i) => {
+    //     return char === str[str.length - i - 1];
+    // });    
     
-        // return str.split('').every((char, i) => {
-        //     return char === str[str.length - i - 1];
-        // });    
-        
-        // return match;
-    }
-    
-    palindrome('abcdefg');
+    // return match;
+
+palindrome('abcdefg');
     
 module.exports = palindrome;
